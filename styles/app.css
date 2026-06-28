@@ -148,6 +148,23 @@
     color: #fff7f1;
 }
 
+[data-testid="stSidebar"] code {
+    color: #2a2523 !important;
+    background: #fff3e6 !important;
+}
+
+[data-testid="stSidebar"] button {
+    background: #fff3e6 !important;
+    color: #2a2523 !important;
+    border: 1px solid rgba(255, 243, 230, 0.9) !important;
+}
+
+[data-testid="stSidebar"] button p,
+[data-testid="stSidebar"] button span,
+[data-testid="stSidebar"] button div {
+    color: #2a2523 !important;
+}
+
 @media (max-width: 900px) {
     .brand-title {
         font-size: 2.2rem;

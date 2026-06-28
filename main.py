@@ -120,14 +120,14 @@ def get_current_agent_status():
     pending_handoffs = st.session_state["restaurant_bot_pending_handoffs"]
     if pending_handoffs:
         current_agent = pending_handoffs[-1].get("agent_label", "Triage Agent")
-        return f"`{current_agent}`가 현재 응대하고 있습니다."
+        return f"{current_agent}가 현재 응대하고 있습니다."
 
     for entry in reversed(st.session_state["restaurant_bot_chat_history"]):
         if entry.get("role") == "assistant" and entry.get("agent_label"):
             current_agent = entry["agent_label"]
-            return f"최근 응답은 `{current_agent}`가 담당했습니다."
+            return f"최근 응답은 {current_agent}가 담당했습니다."
 
-    return "`Triage Agent`가 새로운 요청을 기다리고 있습니다."
+    return "Triage Agent가 새로운 요청을 기다리고 있습니다."
 
 
 async def run_restaurant_bot():
