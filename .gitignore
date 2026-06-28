@@ -1,0 +1,33 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+.env
+
+
+# DB
+*.db
+*.db-shm
+*.db-wal
+
+# Streamlit
+.streamlit/
+
+# VSCode
+.vscode/
+
+.streamlit/
+
+/restaurant-bot/__pycache__/
+/restaurant-bot/*.py[oc]
+/restaurant-bot/build/
+/restaurant-bot/dist/
+/restaurant-bot/wheels/
+/restaurant-bot/*.egg-info

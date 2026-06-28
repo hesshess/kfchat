@@ -1,0 +1,12 @@
+[project]
+name = "kfchat"
+version = "0.1.0"
+description = "Restaurant support chatbot built with Streamlit and OpenAI Agents"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "graphviz>=0.21",
+    "openai-agents[viz]>=0.2.6",
+    "pydantic>=2.0.0",
+    "streamlit>=1.48.0",
+]
